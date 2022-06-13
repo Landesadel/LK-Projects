@@ -145,6 +145,7 @@ p {
    font-weight: bold;
    line-height: 1.5;
    margin-bottom: 30px;
+   text-transform: uppercase;
 }
 
 .btn {
@@ -207,6 +208,7 @@ padding: 30px 30px 20px;
    margin-bottom: 10px;
    font-size: 18px;
    letter-spacing: 0.15em;
+   text-transform: uppercase;
 }
 
 .info-text {
@@ -224,6 +226,7 @@ padding: 30px 30px 20px;
    font-size: 30px;
    margin-bottom: 15px;
    letter-spacing: 0.15em;
+   text-transform: uppercase;
 }
 
 .block-link {
@@ -231,6 +234,7 @@ padding: 30px 30px 20px;
    margin-bottom: 60px;
    letter-spacing: 0.15em;
    color: #000;
+   text-transform: uppercase;
 }
 
 .block-link:hover {
@@ -305,6 +309,7 @@ padding: 30px 30px 20px;
    font-weight: 600;
    letter-spacing: 0.23em;
    color: #000;
+   text-transform: uppercase;
 }
 
 .services-text {
@@ -317,5 +322,53 @@ padding: 30px 30px 20px;
    bottom: 25px;
    left: 30px;
    letter-spacing: 0.23em;
+   text-transform: uppercase;
 }
 
+/* about */
+
+.about {
+   padding: 115px 0;
+   background-color: #171616;
+}
+
+.about-wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.text-white {
+   color: #fff;
+}
+
+.about-block {
+   max-width: 500px;
+}
+
+.about-text {
+   margin: 35px 0 40px 0;
+font-weight: 600;
+color: #B7B7B7;
+letter-spacing: 0.23em;
+}
+
+.about-link {
+   font-weight: 500;
+   font-size: 18px;
+   letter-spacing: 0.15em;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+.about-link:hover {
+   text-decoration: none;
+}
+
+.img-block {
+
+}
+
+.about-img {
+   height: 340px;
+}
