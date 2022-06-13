@@ -161,6 +161,9 @@ p {
    font-size: 15px;
    font-weight: 500;
    transition:  .3s linear;
+   cursor: pointer;
+   outline: 0;
+   border: 0;
 }
 
 .btn:hover {
@@ -218,7 +221,7 @@ padding: 30px 30px 20px;
 
 /* services block */
 
-.services {
+.section {
    margin-bottom: 100px;
 }
 
@@ -366,9 +369,172 @@ letter-spacing: 0.23em;
 }
 
 .img-block {
-
+   display: inline-block;
+   overflow: hidden;
 }
 
 .about-img {
+   display: block;
    height: 340px;
+   transition: 1s;
+}
+
+.img-block img:hover {
+   transform: scale(1.2);
+}
+
+/* process-block */
+
+.process {
+   padding-top: 50px;
+}
+
+.process-title {
+   margin-bottom: 50px;
+  font-size: 148px;
+   font-weight: 900;
+   text-transform: uppercase;
+   text-align: center;
+   line-height: 1;
+}
+
+.process-subtitle {
+   margin-bottom: 90px;
+   font-size: 40px;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 0.15em;
+   text-align: center;
+}
+
+.process-item {
+   padding: 30px 30px 15px;
+   height: 100%;
+   min-height: 150px;
+   background: #FFFFFF;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Contacts block */
+
+.contacts {
+   padding: 100px 0;
+   background-color: #171616;
+}
+
+.contacts .block-title {
+   margin-bottom: 45px;
+}
+
+.contacts-form {
+   max-width: 440px;
+}
+
+.form-row {
+   display: flex;
+   margin: 0 -20px;
+}
+
+.form-group {
+   margin-bottom: 30px;
+   flex: 1;
+   padding: 0 20px;
+   position: relative;
+}
+
+.input-form {
+   width: 100%;
+   padding: 10px 0;
+   outline: 0;
+   border: 0;
+   border-bottom: 2px solid #fff;
+   background: transparent;
+   color: #fff;
+   font-family: inherit;
+   font-size: 15px;
+}
+
+.label-form {
+   letter-spacing: 0.15em;
+   color: #fff;
+   position: absolute;
+   top: 10px;
+   left: 20px;
+   pointer-events: none;
+   transition: .5s ease ;
+}
+
+.input-form:focus + .label-form {
+   transform: translateY(-15px);
+   font-size: 12px;
+}
+
+.input-form:not(:placeholder-shown) + .label-form {
+   transform: translateY(-15px);
+   font-size: 12px;
+}
+
+.txtform {
+   min-height: 130px;
+   width: 100%;
+   padding: 10px 0;
+   resize: vertical;
+   outline: 0;
+   border: 0;
+   border-bottom: 2px solid #fff;
+   background: transparent;
+   color: #fff;
+   font-family: inherit;
+   font-size: 15px;
+}
+
+.txtform:focus + .label-form {
+   transform: translateY(-15px);
+   font-size: 12px;
+}
+
+.txtform:not(:placeholder-shown) + .label-form {
+   transform: translateY(-15px);
+   font-size: 12px;
+}
+
+.text-upper {
+   text-transform: uppercase;
+}
+
+/* footer */
+
+
+.footer-wrapper {
+   height: 150px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.coppyright {
+   letter-spacing: 0.15em;
+}
+
+.footer-soc {
+   display: flex;
+}
+
+.footer-soc-link {
+   margin-right: 20px;
+   text-decoration: none;
+}
+
+.footer-soc-link:last-child {
+   margin-right: 0;
+}
+
+.footer-soc-link img {
+   height: 25px;
+   transition: .2s linear;
+}
+
+.footer-soc-link img:hover {
+   height: 30px;
+   
 }
